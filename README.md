@@ -3,7 +3,7 @@
 ##### The main things leearned from this lab are as follows 
 
  
- Markup:   * the switch can have connectivity to other ip subnet once the ip is set using the following commanc
+ Markup :  * the switch can have connectivity to other ip subnet once the ip is set using the following commanc
            * on config terminal (ip default-gateway and then ip address where you want to sent traffic to)
            * Interface details can be seen when this command is run on enable privildge (show interface f0/1)
            * the above command shouldn't be confused with this one (show ip interface brief ) where you see details of the list of all interface connected on the device

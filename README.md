@@ -15,8 +15,8 @@
 
  * Steps to take when troubleshooting an issue with networking
  * Questions to ask to guide you in finding a solution 
-       * Was it working before? if so, has something changed which could cause the problem? this will usually direct you to the cause
-       * Is the problem affecting evrybody or just one particular user? if its affecting just one users, the likelihood is that the problem is at their end
+     * Was it working before? if so, has something changed which could cause the problem? this will usually direct you to the cause
+     * Is the problem affecting evrybody or just one particular user? if its affecting just one users, the likelihood is that the problem is at their end
  * one important command in this lab was ip name-server **address** this is used to set the dns server address so router know where it is located.
  * other important command ofcourse are ping, traceroute, and telnet. these are all used for troubleshooting an issue.
  * depending on what the issue is, the commands to use to troubleshoot will be a bit different.

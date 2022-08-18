@@ -35,6 +35,13 @@
 * backing up the OS image on the router and upgrading as well
 ![image](https://user-images.githubusercontent.com/110028539/184810569-6d6a4298-465b-4616-b9c8-1d7a911c975d.png)
 
+## 16 Routing Fundamentals (Part A)
+#### Routing is super important
+* knowing when to use static route and summary routes very crutial
+* in Part 2, will be doing longest prefix and load balancing whhich is also crutial in networking
+* the code here i was familir with hence it was just walk in the park
+
+
 
  
        

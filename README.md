@@ -41,6 +41,13 @@
 * in Part 2, will be doing longest prefix and load balancing whhich is also crutial in networking
 * the code here i was familir with hence it was just walk in the park
 
+## 16 Routing Fundamentals (Part B)
+#### Routing is super important
+![image](https://user-images.githubusercontent.com/110028539/185545354-2f1c5e81-7dae-45dd-b006-1e33bf6b01e1.png)
+* as you can see from the above image, i have configured the default routes to the internet 
+* and load balancing also configured to avoid traffic taking the long route when they can simply go through R5
+* Same with the longest prefix, thats also configured in this part B
+
 
 
  

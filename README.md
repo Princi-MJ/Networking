@@ -48,6 +48,57 @@
 * and load balancing also configured to avoid traffic taking the long route when they can simply go through R5
 * Same with the longest prefix, thats also configured in this part B
 
+## 17 Dynamic routing fundamentals
+
+* routing protocols are more scalable than the admni static routes
+* stating roautes only feasible for very small envirnment
+* there many dynamic routing protocols and below are some of them
+
+### RIP (Routing Information Protocol)
+* version is the latest one
+* its the easiest and simplest routing protocol
+* ist configured like this
+	**
+	router rip
+	version 2
+	network 10.0.0.0
+	no auto-summary
+	**
+* RIP uses a hop count as a metric
+* RIP administrative distance is 120
+* RIP is a distance vector routing protocol, all it knows is what its directly connected neighbors and the list of networks advirtised by them
+* CLI command for checking state of all links is 
+	* show ip rip database
+
+### OSPF (Open Shortest Path First)
+* ospf is the most famous, it selects the best route by making use of the cost as a metric
+* it can however be complex and difficult as it can scale to any size of the network
+	**
+	router ospf 1
+	network 10.0.0.0 0.255.255.255 area 0
+	**
+* OSPF is a link state protocol, so it knows the state of every link on the router
+* CLI command for checking state of all links is 
+	* show ip ospf database
+* OSPF administrative distance is 110
+
+### EIGRP (Enhanced Interior Gateway Routing Protocol)
+* it is considered as a proprietary of cisco
+* configuration of eigrp is as follows
+	**
+	router eigrp 100
+	no auto-summary 
+	network 10.0.0.0 0.255.255.255
+	**
+* Eigrp administrative distance is 90
+* Eigrp also used a metric that takes into consideration of bandwidth and delay
+
+** These are the dynamic routing procols covered in this lab, there is many more which will be done in the future such as IS-IS **
+
+* Floatng static routes are used as backup routes
+* they are configured in this manor ip route 10.0.0.0 255.255.255.0 10.0.2.1 95
+* the above static floating route would work if the eigrp route went down, as it will now become the best route given the lower AD comparing to OSPF (110) and RIP (120)
+
 
 
  

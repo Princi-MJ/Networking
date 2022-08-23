@@ -99,6 +99,12 @@
 * they are configured in this manor ip route 10.0.0.0 255.255.255.0 10.0.2.1 95
 * the above static floating route would work if the eigrp route went down, as it will now become the best route given the lower AD comparing to OSPF (110) and RIP (120)
 
+## 18 Connectivity Troubleshooting  
+
+* This was a simple troubleshoot
+* All i needed was to add a route in R3 to 10.1.2.0
+* After adding the route everything was great
+
 
 
  

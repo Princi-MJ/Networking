@@ -105,6 +105,21 @@
 * All i needed was to add a route in R3 to 10.1.2.0
 * After adding the route everything was great
 
+## 19-1 IGP Fundamentals configurations
+* RIPv2 and EIGRP were configured
+* Things leaned from this lab
+	* Passive interface configuration avoids sending out internal network information.
+	* passive interface is configured as follows
+		- router rip
+		- passive-interface f1/1
+		- network 203.0.113.0
+	* default static route configured
+	* to ensure that all other routers learn via RIP how to reach the internet, we inject default static route like this
+		- router rip
+		- default-information originate
+		
+	* we can verify if routers have formed adjecencies by running this command
+		- show ip eigrp/ospf neighbors
 
 
  
